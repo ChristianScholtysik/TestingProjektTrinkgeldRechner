@@ -17,4 +17,3 @@ test('Trinkgeldrechner gibt richtiges Trinkgeld aus', async ({ page }) => {
   await expect(page.locator('#result-tip')).toContainText(' 200 EUR');
   await expect(page.locator('#result-perperson')).toContainText(' 120 EUR');
   await expect(page.locator('#result-total')).toContainText(' 1200 EUR');
-});
