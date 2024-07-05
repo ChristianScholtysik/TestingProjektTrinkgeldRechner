@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Trinkgeldrechner</h1>
+      <form action="">
+        <label for="summe-input">Rechnungssumme</label>
+        <input id="summe-input" type="number" placeholder="" />
+        <label for="leute-input">Leute die teilen</label>
+        <input id="leute-input" type="number" placeholder="" />
+        <label for="qualitaet">Servicequalität</label>
+        <select id="qualitaet" name="servicequalitaet" id="">
+          <option value="2">Doof</option>
+          <option value="10">Okay</option>
+          <option value="20">Supertoll</option>
+        </select>
+        <button  id="calculate-tip-button">Berechne!</button>
+        <div id="resultarea">
+          <p id="result-tip"></p>
+          <p id="result-perperson"></p>
+          <p id="result-total"></p>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
